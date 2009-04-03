@@ -16,10 +16,12 @@
 
 package com.android.camera;
 
+import com.android.camera.gallery.IImage;
+
 import android.net.Uri;
 
 interface SelectedImageGetter {
-    ImageManager.IImage getCurrentImage();
+    IImage getCurrentImage();
     Uri getCurrentImageUri();
 }
 
