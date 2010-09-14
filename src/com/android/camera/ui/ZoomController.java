@@ -36,7 +36,7 @@ public class ZoomController extends GLView {
     private static final DecimalFormat sZoomFormat = new DecimalFormat("#.#x");
     private static final int INVALID_POSITION = Integer.MAX_VALUE;
 
-    private static final float LABEL_FONT_SIZE = 18;
+    private static final float LABEL_FONT_SIZE = 11;
     private static final int HORIZONTAL_PADDING = 3;
     private static final int VERTICAL_PADDING = 3;
     private static final int MINIMAL_HEIGHT = 150;
