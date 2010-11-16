@@ -16,10 +16,11 @@
 
 <com.android.camera.RotateImageView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/review_thumbnail"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
         android:clickable="true"
         android:focusable="false"
         android:background="@drawable/border_last_picture"/>
