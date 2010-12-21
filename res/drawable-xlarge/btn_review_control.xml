@@ -15,7 +15,7 @@
 -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@color/review_control_pressed_color" />
-    <item android:drawable="@android:color/transparent" />
+    <item android:state_pressed="true" android:drawable="@drawable/bg_text_on_preview_pressed" />
+    <item android:drawable="@drawable/bg_text_on_preview_transparent" />
 </selector>
 
