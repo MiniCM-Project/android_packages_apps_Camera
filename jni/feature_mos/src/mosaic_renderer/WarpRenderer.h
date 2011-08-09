@@ -29,6 +29,7 @@ class WarpRenderer {
     int GetTextureName();
     void SetInputTextureName(GLuint textureName);
     void SetInputTextureDimensions(int width, int height);
+    void SetInputTextureType(GLenum textureType);
 
     void InitializeGLContext();
 
@@ -47,11 +48,12 @@ class WarpRenderer {
 
     // Redefine this to use special texture types such as
     // GL_TEXTURE_EXTERNAL_OES.
-    virtual GLenum InputTextureType() const { return GL_TEXTURE_2D; }
+    virtual GLenum InputTextureType() const { return mInputTextureType; }
 
 
     GLuint mGlProgram;
     GLuint mInputTextureName;
+    GLenum mInputTextureType;
     int mInputTextureWidth;
     int mInputTextureHeight;
 

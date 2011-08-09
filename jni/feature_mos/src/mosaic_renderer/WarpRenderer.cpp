@@ -346,6 +346,7 @@ void WarpRenderer::InitializeGLContext()
     }
 
     mInputTextureName = -1;
+    mInputTextureType = GL_TEXTURE_2D;
     mGlProgram = 0;
     mTexHandle = 0;
 }
@@ -358,6 +359,11 @@ int WarpRenderer::GetTextureName()
 void WarpRenderer::SetInputTextureName(GLuint textureName)
 {
     mInputTextureName = textureName;
+}
+
+void WarpRenderer::SetInputTextureType(GLenum textureType)
+{
+    mInputTextureType = textureType;
 }
 
 void WarpRenderer::SetInputTextureDimensions(int width, int height)
